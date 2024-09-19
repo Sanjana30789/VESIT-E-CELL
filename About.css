@@ -1,0 +1,49 @@
+.about{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+
+.sanjana{
+    background: linear-gradient(rgba(8,0,55,0.7),rgba(8,0,55,0.7)) , url('../assets/b1.avif');
+    margin-top: 0%;
+    padding-top: 60px;
+}
+
+
+
+.about-left{
+    flex-basis: 40%;
+
+
+}
+
+.about-right{
+    flex-basis: 56%;
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.about-left-1{
+    flex-basis: 40%;
+
+}
+
+.about-right-1{
+    flex-basis: 56%;
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+

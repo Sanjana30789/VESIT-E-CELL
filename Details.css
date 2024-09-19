@@ -1,0 +1,105 @@
+/* Container for the entire event details page */
+.event-details-container {
+    max-width:100%;
+    /* margin-top: 20px;
+    margin-left: 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    animation: fadeIn 1s ease-in;
+    background: linear-gradient(rgba(8,0,55,0.4),rgba(8,0,55,0.4)) , url('../assets/b1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Add fade-in animation */
+  }
+  
+  /* Styling for the event image */
+  .details-image {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .details-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+  }
+  
+  .details-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Styling for the event content */
+  .event-details-content {
+    text-align: center;
+    padding: 30px;
+    max-width: 1000px;
+    margin-top: 20px; /* Limit width for readability */
+  }
+  
+  /* Event title */
+  .details-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #082255;
+    animation: slideIn 0.5s ease-out; /* Add slide-in animation */
+  }
+  
+  /* Event description */
+  .details-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+    animation: fadeInUp 0.5s ease-out; /* Add fade-in-up animation */
+  }
+  
+  /* Add responsive design */
+  @media (max-width: 768px) {
+    .details-content h1 {
+      font-size: 2rem;
+    }
+  
+    .details-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

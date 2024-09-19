@@ -1,0 +1,73 @@
+
+
+.on{
+  background: linear-gradient(rgba(8,0,55,0.7),rgba(8,0,55,0.7)) , url('../assets/b1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+.contact {
+    /* padding-top: 20px; */
+    background-color: none; /* Set background color */
+    padding: 0px; /* Add padding */
+    color: #fff;
+    height: 600px;
+    width: 500px;
+    margin: 7%;
+    max-width: 100%;
+  top: 100px; 
+  position: relative; /* Position relative to the nearest positioned ancestor */
+  top: 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 30%;/*/* Set text color to white */
+  
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make the form full width */
+    max-width: 800px; /* Set a maximum width for responsiveness */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .contact form label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add space between label and input */
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make inputs full width */
+    margin-bottom: 15px; /* Add space between form elements */
+  }
+  
+  .contact form textarea {
+    height: 150px; /* Set textarea height */
+  }
+  
+  .contact form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .contact form button:hover {
+    background-color: #0067cc; /* Change background color on hover */
+  }
