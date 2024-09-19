@@ -1,0 +1,259 @@
+
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensure full width */
+  
+}
+
+
+.home-page {
+  background-image: url('./assets/b2.png'); /* Path to your background image */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  background-attachment: fixed; /* Keep the image fixed in place when scrolling */
+  width: 100vw; /* Full viewport width */
+  height: 750px; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Default text color for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  position: relative;
+  flex-direction: column;
+    gap: 20px; 
+    object-fit: cover;
+}
+
+
+.home-page-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+/* .home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  /* z-index: 3; /* Ensure overlay is below the content */
+ */ */
+
+ .home-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Components/image.png'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* Adjust this value for transparency (0.0 - fully transparent, 1.0 - fully opaque) */
+  z-index: 1;
+}
+
+
+
+/* src/Components/HomePage.css */
+
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  color: white; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  height: 400px;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: large;
+
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  color: white; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 750px;
+  height: 350px;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: large;
+
+}
+
+.image{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 15%; /* Adjust the top value as needed */
+  right: 5%;
+  width: 850px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 0%;
+  border-radius: 20%;
+  order: 1;
+}
+
+.content-container h1,
+.content-container p {
+  text-shadow: 1px 1px 1px white;
+   /* Optional: Adds a shadow for better readability */
+}
+
+
+h1 {
+  font-size: 3rem; /* Adjust font size as needed */
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 5%; /* Adjust the top value as needed */
+  right: 5%;
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 0%;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the image */
+  object-fit: cover;
+}
+
+
+.gallery-wrapper {
+  margin-top: 60px; /* Space for the fixed navbar */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; 
+  object-fit: cover;/* Include padding in width/height */
+}
+
+/* Container for the gallery */
+/* .gallery-container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  top: 20px;
+} */
+
+.gallery-container-top {
+  position: relative;
+  top: 0; /* Position at the top */
+  object-fit: cover;
+}
+
+.gallery-container-bottom {
+  position: relative;
+  top: 200px; /* Adjust the top value as needed */
+  object-fit: cover;
+}
+/* Individual image containers */
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a nicer effect */
+}
+
+/* Image styling */
+.gallery-image {
+  width: 50%; /* Ensure images take full width of their container */
+  height: 500px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits nicely inside */
+  transition: transform 0.3s ease;
+  margin-top: 0%;
+  object-fit: cover;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+.gallery-heading{
+  margin-top: 50px;
+}
+
+
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heading:hover{
+  color : green;
+}
+
+
+.content-1{
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  color: white; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 750px;
+  height: 350px;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: large;
+  margin-top: 500px;
+
+}
+
+.image-1{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 15%; /* Adjust the top value as needed */
+  right: 5%;
+  width: 950px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 0%;
+  border-radius: 20%;
+  width: 950px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 0%;
+  border-radius: 20%;
+  order: 2;
+}
+
